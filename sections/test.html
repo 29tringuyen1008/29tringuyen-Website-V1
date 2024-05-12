@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+<center id="credit">Nguyễn Trí Nguyên - 29_tringuyen ©: 2016-currentyear ( /yearsold1/ năm sau khi tài khoản "This Van Hue" được tạo ra)</center>
+
+<script type="text/javascript">
+// Date Module
+
+const datetime = new Date()
+
+let month = datetime.getMonth()
+let day = datetime.getDay()
+
+document.getElementById("credit").innerHTML = document.getElementById("credit").innerHTML.replace("currentyear", datetime.getFullYear())
+document.getElementById("credit").innerHTML = document.getElementById("credit").innerHTML.replace("/yearsold1/", parseFloat((datetime-new Date(2016,7,29))/3.154e+10).toFixed(2))
+
+</script>
+</body>
+</html>

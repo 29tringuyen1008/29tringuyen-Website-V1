@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <title>Trang web 29_tringuyen - Trang đặc biệt - Special Pages</title>
+    <link rel="icon" type="image/x-icon" href="../static/webimages/favicon.ico">
+
+    <meta name="keywords" content="29tringuyen, 29_tringuyen, 29tn">
+    <meta name="description" content="An ordinary website of 29_tringuyen - Trang web bình thường của 29_tringuyen">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta property="og:title" content="29_tringuyen Web">
+    <meta property="og:description" content="An ordinary website of 29_tringuyen - Trang web bình thường của 29_tringuyen">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://29tringuyena.wuaze.com">
+    <meta property="og:image" content="https://29tringuyena.wuaze.com/static/webimages/favicon.ico">
+</head> 
+<body id="MainPageBackground" style="background-image: url(../static/webimages/hinhchinh.png); font-family: Arial, Helvetica, sans-serif;">
+    <link rel="stylesheet" href="../static/css/Cssconfigmain.css">
+    <!--<object id="menu-bar" data="../static/boxes/tieude1.html" style="height:300px;width:95vw;border: 0px solid black;"></object>-->
+    <div class="menu-bar" , id="29TriNguyenWebMenu"></div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h1>Thời gian trong trang web của 29_tringuyen</h1>
+    <br>
+
+    <!--TIÊU ĐỀ-->
+    <div class="mainsheet">
+        <soleframedoc>
+            <p style="font: 2vw Times; font-style: italic; text-align:center">Đây là những thời gian với rất nhiều loại lịch.</p><br />
+            <hr /><p style="font: 1.75vw Times; font-style: bold; text-align:center">Năm tại những lịch</p><hr />
+            <p style="font: 1.5vw Times; font-style: italic; text-align:center">Gregorian (Default Year - Năm mặc định): <i id="GregorianTime"></i> AD</p>
+            <p style="font: 1.5vw Times; font-style: italic; text-align:center">Gregorian Roman-styled Year - Năm kiểu Rô-ma: <i id="GregorianTimeRoman"></i></p>
+            <p style="font: 1.5vw Times; font-style: italic; text-align:center">Buddhist Year - Năm Phật: <i id="BuddhistTime"></i> BE </p>
+            <p style="font: 1.5vw Times; font-style: italic; text-align:center">Holocene: <i id="HoloceneTime"></i> HE</p>
+
+            <br />
+
+            <p style="font: 1.5vw Times; font-style: italic; text-align:center">Thế kỉ hiện tại: <i id="CenturyDate"></i></p>
+
+            <hr /><p style="font: 1.75vw Times; font-style: bold; text-align:center">Ngày, tháng và năm hiện tại</p><hr />
+            <p style="font: 1.5vw Times; font-style: italic; text-align:center">Ngày: <i id="ActualDate"></i></p>
+            <p style="font: 1.5vw Times; font-style: italic; text-align:center">Ngày Tiếng Anh: <i id="EnglishTime"></i></p>
+
+            <hr /><p style="font: 1.75vw Times; font-style: bold; text-align:center">Ngày khác</p><hr />
+            <p style="font: 1.5vw Times; font-style: italic; text-align:center"><i id="29_tringuyenCreated"></i> năm sau This Hue Van đã tạo ra từ ngày 29/07/2016</p>
+            <p style="font: 1.5vw Times; font-style: italic; text-align:center"><i id="WebsiteCreated"></i> năm sau trang web của 29_tringuyen đã phát hành từ ngày 30/01/2023, ban đầu được xuất bản với 000webhost</p>
+        </soleframedoc>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <script type="text/javascript" src="../static/js/module.js"></script>
+    <div id="29TriNguyenCopyrightFooter" class="29TriNguyenCopyrightFooterClass"></div>
+
+    <br />
+
+    <script>
+        const datetime = new Date();
+
+        document.getElementById("GregorianTime").innerHTML = datetime.getFullYear();
+        document.getElementById("GregorianTimeRoman").innerHTML = RomanizeNumber(datetime.getFullYear());
+        document.getElementById("BuddhistTime").innerHTML = datetime.getFullYear() + 543
+        document.getElementById("HoloceneTime").innerHTML = datetime.getFullYear() + 10000
+
+        document.getElementById("CenturyDate").innerHTML = RomanizeNumber(Math.ceil((datetime.getFullYear() / 100)))
+
+        document.getElementById("ActualDate").innerHTML = datetime.getDate() + "/" + (datetime.getMonth() + 1) + "/" + datetime.getFullYear()
+        document.getElementById("EnglishTime").innerHTML = datetime.toDateString()
+
+        document.getElementById("29_tringuyenCreated").innerHTML = parseFloat((datetime - new Date(2016, 7 - 1, 29)) / 3.154e+10).toFixed(2)
+        document.getElementById("WebsiteCreated").innerHTML = parseFloat((datetime - new Date(2023, 1 - 1, 30)) / 3.154e+10).toFixed(2)
+
+        SetupCopyright29TriNguyenFooter()
+        LoadMenuBar()
+    </script>
+
+</body>
+</html>

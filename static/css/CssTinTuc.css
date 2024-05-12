@@ -1,0 +1,37 @@
+@media screen {
+    .mainsheet framedoc1 pagelist {
+        list-style: none;
+        margin-left: 15px;
+        display: inline-block;
+        height:auto;
+    }
+
+    .mainsheet framedoc1 pagelist page {
+        float: left; 
+        display: grid;
+        margin-top: 30px;
+        margin-left: 15px;
+        background-color:rgb(6, 22, 238);
+        width: 400px;
+        height:auto;
+    }
+
+    .mainsheet framedoc1 pagelist page imagedisplay {
+        background-color: #000000;
+    }
+
+    .mainsheet framedoc1 pagelist page pagetitle {
+        margin-top: -15px;
+        margin-left: 5px;
+        color: #ffffff;
+        text-align: center;
+    }
+
+    .mainsheet framedoc1 pagelist page publisheddate {
+        color: #ffffff;
+    }
+
+    .mainsheet framedoc1 pagelist page button {
+        background-color: gray;
+    }
+}

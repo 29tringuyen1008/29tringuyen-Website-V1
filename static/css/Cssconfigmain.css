@@ -1,0 +1,107 @@
+@media screen {
+    goog-te-banner-frame .skiptranslate {
+        display: none; 
+    }
+    body {
+        top: 0.1px;
+        font-family: "Times New Roman";
+    }
+
+    table, th, td {
+        border: 1px solid black;
+    }
+
+    .menu-bar {
+        background: rgb(8, 99, 173);
+    }
+
+    .logoDIV {
+        text-align: left;
+        font-size: larger;
+        width: 120px;
+        margin: 15px;
+    }
+
+    .menu-bar {
+        background: rgb(8, 99, 173);
+        text-align: center;
+    }
+
+    .menu-bar menusize {
+        display: inline-flex;
+        list-style: none;
+        color: #000000;
+    }
+
+    .menu-bar menusize parali {
+        width: 120px;
+        margin: 15px;
+    }
+
+    .menu-bar menusize parali a {
+        text-decoration: none;
+        color: #000000
+    }
+
+    .sub-menu-phandieuhuong {
+        display: none;
+        margin: 11px;
+    }
+
+    .menu-bar menusize parali:hover {
+        background-color: rgb(14, 119, 204); 
+    }
+
+    .menu-bar menusize parali:hover .sub-menu-phandieuhuong {
+        display: block;
+        position: absolute;
+        text-align: left;
+        background-color: rgb(14, 119, 204);
+        z-index: 999;
+        margin-top: 0px;
+        margin-left: -15px;
+    }
+
+    .menu-bar menusize parali:hover .sub-menu-phandieuhuong menusize {
+        display: block;
+        margin: 15px;
+    }
+
+    .mainsheet {
+        display:inline-flex;
+    }
+
+    .mainsheet framedoc1 {
+        background-color: aqua;
+        border-right: 5px solid black;
+        border-bottom: 5px solid black;
+        width: 75vw;
+        display:block;
+        height:auto;
+    }
+
+    .mainsheet framedoc2 {
+        width: 20vw;
+        height:auto;
+    }
+
+    .mainsheet soleframedoc {
+        background-color: white;
+        border-right: 5px solid black;
+        border-bottom: 5px solid black;
+        display:block;
+        width: 95vw;
+        height: auto;
+    }
+
+    .mainsheet soleframedocclassic {
+        background-color: cyan;
+        border-right: 5px solid black;
+        border-bottom: 5px solid black;
+        border-right: 5px solid black;
+        border-bottom: 5px solid black;
+        display: block;
+        width: 95vw;
+        height: auto;
+    }
+}

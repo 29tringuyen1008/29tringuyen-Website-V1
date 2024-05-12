@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <title>29_tringuyen.com</title> 
+    <body id="MainPageBackground" style="background-image: url(../files/hinhchinh.png);font-family: Arial, Helvetica, sans-serif;">
+        <link rel="stylesheet" href="Cssconfigmain.css">
+        <link rel="stylesheet" href="CssTinTuc.css">
+
+        <!--TIÊU ĐỀ-->
+
+        <div class="logoDIV"><a href="main.html">29_tringuyen</a></div>
+
+        <iframe src="../files/tieude1.html" style="height:300px;width:95vw;border: 0px solid black;"></iframe>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <h1>TIÊU ĐỀ</h1>
+        <br>
+
+        <!--TIÊU ĐỀ-->
+        <div class="mainsheet">
+            <framedoc1>
+                ĐẶT CÁI GÌ CŨNG ĐƯỢC
+            </framedoc1>
+            <framedoc2>
+
+            </framedoc2>
+        </div>
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        
+        <hr>
+        <center id="credit"><p><translate translate="no">Nguyễn Trí Nguyên - 29_tringuyen ©: 2016-currentyear</translate><translate translate="no"> </translate>(<translate translate="no">/yearsold1/ </translate>năm sau khi tài khoản "This Van Hue" được tạo ra)</p></center>
+        <hr>
+        <br>
+        <p id="SelectTheLanguageLabel" translate="no">Select The Languages</p>
+        <div id="google_translate_element"></div>
+        <p id="KhoiDongTrangThanhVNButton">
+        </p>
+
+        <style id="mainstyle">
+            goog-te-banner-frame.skiptranslate {display: none !important;} 
+            body {top: 0px !important;}
+        </style>
+
+        <script src="../files/module.js"></script>
+
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+        <script type="text/javascript">
+            // Date Module
+
+            const datetime = new Date()
+
+            let month = datetime.getMonth()
+            let day = datetime.getDay()
+
+            document.getElementById("credit").innerHTML = document.getElementById("credit").innerHTML.replace("currentyear", datetime.getFullYear())
+            document.getElementById("credit").innerHTML = document.getElementById("credit").innerHTML.replace("/yearsold1/", parseFloat((datetime-new Date(2016,7,29))/3.154e+10).toFixed(2))
+
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({pageLanguage: 'vn'}, 'google_translate_element');
+            }
+            document.addEventListener('DOMSubtreeModified', function (e) {
+                setTimeout(function () {
+                    if(document.documentElement.lang === "en") {
+                        document.documentElement.id = "en"
+
+                        document.getElementById("tn12348LinkSection").innerHTML = "<translate translate='no'>The TN. Production</translate> - My Counterpart - 2018";
+                        document.getElementById("google_translate_element").style.display = "none";
+
+                        document.getElementById("KhoiDongTrangThanhVNButton").innerHTML = "This page replaces misleading words made by google translate to make the page better, Refresh the page to translate back into 29_tringuyen's native language, Vietnamese"
+                    } 
+                }, 750);
+            });
+        </script>
+
+    </body>
+</html>
