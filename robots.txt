@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /static/pagetest.html
+Disallow: /sections/29tringuyenPack/
+Allow: /sections/29tringuyenPack/CTH/
+Allow: /sections/29tringuyenPack/PublicImages/
+Allow: /sections/29tringuyenPack/29tnPingPong.html
+Allow: /hub/
